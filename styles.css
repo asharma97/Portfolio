@@ -165,18 +165,19 @@ h1, h2, h3 {
   bottom: 20px;
   right: 20px;
   background-color: white;
-  padding: 6px 8px; /* top/bottom, left/right */
+  padding: 4px; /* minimal padding all around */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  overflow: hidden; /* hides iframe's extra space */
+  overflow: hidden; /* hides iframe overflow */
   z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .floating-badge iframe {
   display: block;
   border: none;
-  width: calc(100% + 8px); /* expand so right side trims evenly */
-  margin-right: -8px; /* pull back the extra space on the right */
+  margin: 0;
+  transform: translateX(-2px); /* trims extra white on the right */
 }
 
 .floating-badge:hover {
@@ -189,8 +190,8 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background: transparent;
-  padding: 4px 3px;
 }
+
 
 /* Additional visual breathing room between sections */
 section {
