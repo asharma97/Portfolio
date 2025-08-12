@@ -165,10 +165,10 @@ h1, h2, h3 {
   bottom: 20px;
   right: 20px;
   background-color: white;
-  padding: 4px; /* minimal padding all around */
+  padding: 0; /* remove extra padding */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  overflow: hidden; /* hides iframe overflow */
+  overflow: hidden;
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -177,7 +177,10 @@ h1, h2, h3 {
   display: block;
   border: none;
   margin: 0;
-  transform: translateX(-2px); /* trims extra white on the right */
+  width: 300px; /* fixed badge width */
+  height: 350px; /* fixed badge height */
+  transform: scale(0.95); /* shrink slightly to remove unwanted gap */
+  transform-origin: top left;
 }
 
 .floating-badge:hover {
@@ -187,11 +190,9 @@ h1, h2, h3 {
 
 .floating-badge .LI-profile-badge {
   display: inline-block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background: transparent;
 }
-
 
 /* Additional visual breathing room between sections */
 section {
