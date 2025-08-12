@@ -164,7 +164,7 @@ h1, h2, h3 {
   margin-top: 16px;
 }
 
-/* Floating LinkedIn Badge */
+/* Floating LinkedIn Badge 
 .floating-badge {
   position: fixed;
   bottom: 20px;
@@ -177,6 +177,47 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   border-radius: 8px;
 }
+*/
+/* Floating LinkedIn Badge */
+.floating-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-badge .LI-profile-badge {
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.floating-badge:hover {
+  transform: translateY(-5px);
+}
+
+.floating-badge .LI-profile-badge:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtle glow animation */
+@keyframes badge-glow {
+  0% { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }
+  50% { box-shadow: 0 6px 20px rgba(0, 115, 177, 0.4); }
+  100% { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); }
+}
+
+.floating-badge.glow .LI-profile-badge {
+  animation: badge-glow 3s infinite ease-in-out;
+}
+
 
 
 /* Additional visual breathing room between sections */
