@@ -151,24 +151,27 @@ h1, h2, h3 {
   }
 }
 
-/* LinkedIn badge custom styling (optional center alignment) */
-#contact .LI-profile-badge {
-  margin-top: 16px;
-}
-
-/* Floating LinkedIn Badge */
+/* Floating LinkedIn Badge Styling */
 .floating-badge {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .floating-badge .LI-profile-badge {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  background: #fff;
+  padding: 8px;
 }
-
 
 /* Additional visual breathing room between sections */
 section {
