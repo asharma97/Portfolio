@@ -159,40 +159,22 @@ h1, h2, h3 {
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 } */
+/* LinkedIn badge custom styling (optional center alignment) */
+#contact .LI-profile-badge {
+  margin-top: 16px;
+}
+
+/* Floating LinkedIn Badge */
 .floating-badge {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #fff;
-  padding: 0;
-  border-radius: 4px; /* LinkedIn uses smaller radius */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  overflow: hidden;
   z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
-  height: 300px; /* slightly taller for LinkedIn layout */
-}
-
-.floating-badge iframe {
-  display: block;
-  border: none;
-  margin: 0;
-  width: 320px; /* hides default LinkedIn padding */
-  height: 420px;
-  transform: scale(1.05) translate(-8px, -8px);
-  transform-origin: top left;
-}
-
-.floating-badge:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 .floating-badge .LI-profile-badge {
-  display: inline-block;
-  border-radius: 4px;
-  background: transparent;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
 }
 
 
