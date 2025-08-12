@@ -148,7 +148,7 @@ h1, h2, h3 {
 }
 
 /* LinkedIn badge custom styling (optional center alignment) */
-#contact.LI-profile-badge {
+#contact .LI-profile-badge {
   margin-top: 16px;
 }
 
