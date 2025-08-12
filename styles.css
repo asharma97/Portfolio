@@ -146,12 +146,9 @@ h1, h2, h3 {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.floating-badge:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+.floating-badge .LI-profile-badge {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
 }
