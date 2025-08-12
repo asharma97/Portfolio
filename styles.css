@@ -159,27 +159,28 @@ h1, h2, h3 {
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 } */
-
 .floating-badge {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: white;
-  padding: 0; /* remove extra padding */
+  background: white;
+  padding: 0; /* no padding */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   overflow: hidden;
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* match iframe content */
+  height: 350px; /* match iframe content */
 }
 
 .floating-badge iframe {
   display: block;
   border: none;
   margin: 0;
-  width: 300px; /* fixed badge width */
-  height: 350px; /* fixed badge height */
-  transform: scale(0.95); /* shrink slightly to remove unwanted gap */
+  width: 320px; /* slightly larger than container to hide LinkedIn padding */
+  height: 370px;
+  transform: scale(1.05) translate(-10px, -10px);
   transform-origin: top left;
 }
 
@@ -193,6 +194,7 @@ h1, h2, h3 {
   border-radius: 8px;
   background: transparent;
 }
+
 
 /* Additional visual breathing room between sections */
 section {
