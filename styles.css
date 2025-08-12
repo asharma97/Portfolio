@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap');
+
 :root {
   --accent: #1769aa;
+  --accent-hover: #145a92;
+  --secondary: #ff6b35;
   --muted: #666;
+  --bg-light: #f9fbfd;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: Inter, system-ui, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Arial, sans-serif;
   line-height: 1.6;
   color: #222;
-  margin: 0;
+  background: var(--bg-light);
 }
 
 .container {
@@ -20,35 +27,52 @@ body {
   padding: 24px;
 }
 
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
 .hero {
   background: linear-gradient(135deg, #f4fbff, #eef6ff);
-  padding: 48px 0;
+  padding: 60px 0;
   text-align: center;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 2.1rem;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
 }
 
 .subtitle {
   color: var(--muted);
   margin-top: 6px;
+  font-size: 1.1rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 16px;
+  padding: 12px 20px;
   background: var(--accent);
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
 }
 
 .btn.ghost {
   background: transparent;
   color: var(--accent);
-  border: 1px solid var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn.ghost:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .skills {
@@ -56,36 +80,51 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  padding: 0;
+  margin-top: 16px;
 }
 
 .skills li {
-  background: #f3f6fb;
-  padding: 8px 10px;
+  background: #fff;
+  padding: 8px 12px;
   border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.skills li:hover {
+  transform: scale(1.05);
 }
 
 .project {
   display: flex;
-  gap: 16px;
-  margin-bottom: 18px;
-  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project img {
-  width: 160px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .project-content h3 {
-  margin: 0;
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
 .links a {
-  color: var(--accent);
+  color: var(--secondary);
   text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 .site-footer {
@@ -97,17 +136,8 @@ body {
 
 @media (max-width: 720px) {
   .project {
-    flex-direction: column;
+    padding: 16px;
   }
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* LinkedIn badge custom styling (optional center alignment) */
-#contact .LI-profile-badge {
-  margin-top: 16px;
 }
 
 /* Floating LinkedIn Badge */
@@ -116,9 +146,12 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.floating-badge .LI-profile-badge {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  border-radius: 8px;
+.floating-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
 }
