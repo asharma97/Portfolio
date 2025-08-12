@@ -163,35 +163,35 @@ h1, h2, h3 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: white;
-  padding: 0; /* no padding */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background: #fff;
+  padding: 0;
+  border-radius: 4px; /* LinkedIn uses smaller radius */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   overflow: hidden;
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px; /* match iframe content */
-  height: 350px; /* match iframe content */
+  width: 300px;
+  height: 400px; /* slightly taller for LinkedIn layout */
 }
 
 .floating-badge iframe {
   display: block;
   border: none;
   margin: 0;
-  width: 320px; /* slightly larger than container to hide LinkedIn padding */
-  height: 370px;
-  transform: scale(1.05) translate(-10px, -10px);
+  width: 320px; /* hides default LinkedIn padding */
+  height: 420px;
+  transform: scale(1.05) translate(-8px, -8px);
   transform-origin: top left;
 }
 
 .floating-badge:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 .floating-badge .LI-profile-badge {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 4px;
   background: transparent;
 }
 
