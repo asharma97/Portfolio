@@ -112,9 +112,16 @@ h1, h2, h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.project-content h3 {
-  color: var(--accent);
-  margin-bottom: 10px;
+/* Make "Summary:" and "Impact:" labels block-level with spacing */
+.project-content p strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Ensure bullet lists have consistent spacing and indent */
+.project-content ul {
+  margin: 0 0 12px 20px; /* bottom space + left indent */
+  padding-left: 0;
 }
 
 .links a {
