@@ -4,129 +4,191 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Akash Sharma — DevOps Portfolio</title>
+  <meta name="description" content="Akash Sharma — DevOps / SRE Engineer | AWS | Kubernetes | Terraform | CI/CD | High-Traffic Systems">
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Akash Sharma — DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD">
 </head>
+
 <body>
+
+  <!-- HERO -->
   <header class="hero">
     <div class="container">
       <h1>AKASH SHARMA</h1>
-      <p class="subtitle">DevOps Engineer</p>
-      <p class="ctas"><a class="btn" href="#projects">View Projects</a> <a class="btn ghost" href="#contact">Contact</a></p>
+      <p class="subtitle">DevOps / Site Reliability Engineer</p>
+      <p class="ctas">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </p>
     </div>
   </header>
 
   <main class="container">
+
+    <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
-      <p>DevOps Engineer with 3+ years of experience designing, automating, and optimizing cloud infrastructure across AWS, Azure, and GCP. Skilled in CI/CD pipeline development, Kubernetes orchestration, and infrastructure as code (Terraform, Ansible). Passionate about building scalable, secure, and high-performing systems.</p>
+      <p>
+        DevOps / Site Reliability Engineer with 4+ years of experience owning
+        production infrastructure for high-traffic and real-time applications.
+        Strong expertise in AWS, GCP, Kubernetes, CI/CD, and Infrastructure as Code.
+        Proven record of improving deployment velocity, ensuring high availability,
+        and reducing cloud costs by up to 25%.
+      </p>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Key Skills</h2>
       <ul class="skills">
         <li>AWS</li>
-        <li>Linux</li>
-        <li>Cloud</li>
+        <li>GCP</li>
+        <li>DigitalOcean</li>
+        <li>Linux (RHEL, Ubuntu)</li>
         <li>Kubernetes</li>
-        <li>Docker</li>
+        <li>Docker / Docker Compose</li>
         <li>Terraform</li>
-        <li>Ansible</li>        
-        <li>Grafana / Prometheus</li>
-        <li>CI/CD (Jenkins, Bitbucket)</li>
-        <li>Python</li>
+        <li>Ansible</li>
+        <li>CI/CD (Jenkins, GitHub Actions, Bitbucket)</li>
+        <li>Monitoring (Grafana, Prometheus, CloudWatch)</li>
+        <li>PostgreSQL / Redis</li>
+        <li>Python / Shell</li>
+        <li>Cloud Security & Cost Optimization</li>
       </ul>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
 
+      <!-- TALLO -->
       <article class="project">
-       <!-- <img src="assets/bumblebee.png" alt="Bumblebee screenshot"> -->
         <div class="project-content">
-          <h3>Bumblebee — Containerized ETL Pipeline</h3>
-          <p><strong>Tech:</strong> Python, Postman, Conversion, Grafana.</p>
-          <p><strong>Summary:</strong></p>
-                                    <ul>
-                                      <li>Built a containerized ETL framework supporting CSV, JSON, AVRO, and PARQUET formats.</li>
-                                      <li>Integrated Grafana dashboards for real-time job monitoring and alerts.</li>
-                                      <li>Reduced data transformation time by 85% for engineering teams.</li>
-                                    </ul>
-
-<p><strong>Impact:</strong> Reduced manual conversion time by ~60% for the team.</p>
-
-          <p class="links"><a href="https://drive.google.com/file/d/1zXGEhr294P8apd5t5r6fVWL3eaOM13FJ/view?usp=sharing">View Details</a></p>
+          <h3>Tallo — Real-time Communication Platform</h3>
+          <p><strong>Tech:</strong> DigitalOcean, Docker, Docker Compose, PostgreSQL, Redis, Traefik, GitHub Actions</p>
+          <ul>
+            <li>Owned end-to-end production infrastructure for chat and audio/video calls.</li>
+            <li>Deployed containerized backend services on DigitalOcean Droplets.</li>
+            <li>Implemented Traefik reverse proxy with automated SSL.</li>
+            <li>Built CI/CD pipelines using GitHub Actions.</li>
+            <li>Enabled monitoring, security hardening, and cost optimization.</li>
+          </ul>
+          <p><strong>Impact:</strong> Reliable real-time communication with high availability.</p>
         </div>
       </article>
 
+      <!-- LUDO -->
       <article class="project">
-      <!--  <img src="assets/adsw.png" alt="ADSW screenshot"> -->
         <div class="project-content">
-          <h3>ADSW — ML Workflow (Kubeflow)</h3>
-          <p><strong>Tech:</strong> Kubeflow, AWS, Terraform, Kubernetes, Grafana/Prometheus, Bit-Bucket, ML. </p>
-          <p><strong>Summary:</strong></p>
-                                      <ul>
-                                        <li>Integrated Kubeflow dashboard into a custom ML platform for deployment, training, and experimentation.</li>
-                                        <li>Enabled real-time performance monitoring and parameter tuning.</li>
-                                        <li>Improved ML deployment cycle speed by 40%.</li>
-                                      </ul>
+          <h3>Ludo — High-Traffic Gaming Application</h3>
+          <p><strong>Tech:</strong> AWS (EC2, RDS, ElastiCache, S3), DigitalOcean, Jenkins, GitHub Actions</p>
+          <ul>
+            <li>Designed and managed multi-cloud production infrastructure.</li>
+            <li>Implemented Jenkins-based CI/CD pipelines reducing deployment time by 40%.</li>
+            <li>Deployed secondary production setup on DigitalOcean.</li>
+            <li>Ensured high availability, monitoring, and security best practices.</li>
+          </ul>
+          <p><strong>Impact:</strong> Scalable, low-latency gameplay for concurrent users.</p>
+        </div>
+      </article>
+
+      <!-- NIMBI -->
+      <article class="project">
+        <div class="project-content">
+          <h3>Nimbi — Cloud Migration (Hetzner → AWS)</h3>
+          <p><strong>Tech:</strong> AWS, Terraform, EC2, IAM, Networking</p>
+          <ul>
+            <li>Led full infrastructure migration from Hetzner Cloud to AWS.</li>
+            <li>Re-architected compute, database, and networking layers.</li>
+            <li>Improved scalability, security, and availability.</li>
+            <li>Reduced infrastructure cost by ~25%.</li>
+          </ul>
+          <p><strong>Impact:</strong> More secure, scalable, and cost-efficient production setup.</p>
+        </div>
+      </article>
+
+      <!-- ADSW -->
+      <article class="project">
+        <div class="project-content">
+          <h3>ADSW — Life Science ML Platform</h3>
+          <p><strong>Tech:</strong> AWS, Kubeflow, Kubernetes, Terraform, Grafana, Prometheus</p>
+          <ul>
+            <li>Supported DevOps operations for ML workflows.</li>
+            <li>Provisioned infrastructure using Terraform.</li>
+            <li>Enabled Kubeflow-based training and experimentation.</li>
+            <li>Integrated monitoring and cost optimization.</li>
+          </ul>
           <p><strong>Impact:</strong> Improved ML deployment velocity by ~35%.</p>
-
-          <p class="links"><a href="https://drive.google.com/file/d/1zXGEhr294P8apd5t5r6fVWL3eaOM13FJ/view?usp=sharing">View Details</a></p>
         </div>
       </article>
 
+      <!-- BUMBLEBEE -->
       <article class="project">
-       <!-- <img src="assets/vincy.png" alt="Vincy"> -->
+        <div class="project-content">
+          <h3>Bumblebee — Containerized ETL Platform</h3>
+          <p><strong>Tech:</strong> Python, Docker, Grafana, Data Formats (CSV, JSON, AVRO, PARQUET)</p>
+          <ul>
+            <li>Built containerized ETL workflows for data transformation.</li>
+            <li>Integrated Grafana dashboards for observability.</li>
+            <li>Improved system visibility and reliability.</li>
+          </ul>
+          <p><strong>Impact:</strong> Reduced manual data processing effort by ~60%.</p>
+        </div>
+      </article>
+
+      <!-- VINCY -->
+      <article class="project">
         <div class="project-content">
           <h3>Vincy — Voice-Activated Cloud Assistant</h3>
-          <p><strong>Tech:</strong> Python, NLP, Amazon Polly, Docker.</p>
-         <p><strong>Summary:</strong></p>
-                                        <ul>
-                                          <li>Developed using Python, NLP, Machine Learning, and Amazon Polly.</li>
-                                          <li>Fully responsive with both voice and manual controls.</li>
-                                          <li>Automated AWS & Docker tasks via conversational commands.</li>
-                                        </ul>
-          <p><strong>Impact:</strong> It boosted productivity by enabling quick, hands-free access to AWS services, Docker containers, and smart devices, reducing manual effort and making technology management faster and more efficient.</p>
-          <p class="links"><a href="https://drive.google.com/file/d/1zXGEhr294P8apd5t5r6fVWL3eaOM13FJ/view?usp=sharing">View Details</a></p>
+          <p><strong>Tech:</strong> Python, NLP, Amazon Polly, Docker</p>
+          <ul>
+            <li>Built voice-based assistant for managing AWS and Docker tasks.</li>
+            <li>Enabled hands-free infrastructure operations.</li>
+          </ul>
+          <p><strong>Impact:</strong> Improved productivity through automation.</p>
         </div>
       </article>
 
-       <article class="project">
-       <!-- <img src="assets/vincy.png" alt="Vincy"> -->
+      <!-- E-LEARNING -->
+      <article class="project">
         <div class="project-content">
-          <h3>Cloud Based E-Learning System</h3>
-          <p><strong>Tech:</strong> Facial recognition (OpenCV), Python, Cloud services (AWS/GCP), Database (MySQL), Web technologies (HTML, CSS, JavaScript).</p>
-          <p><strong>Summary:</strong> </p>
-                                     <ul>
-                                          <li>Built an AI-based attendance system using face recognition and cloud storage.</li>
-                                          <li>Enabled collaboration tools for students and faculty across devices.</li>
-                                          <li>Deployed a scalable cloud architecture supporting 500+ concurrent users.</li>
-                                     </ul>
-          <p><strong>Impact:</strong> Improved attendance accuracy, reduced manual errors, saved administrative time, and increased flexibility in learning and collaboration for students and faculty.</p>
-          <p class="links"><a href="https://drive.google.com/file/d/1zXGEhr294P8apd5t5r6fVWL3eaOM13FJ/view?usp=sharing">View Details</a></p>
+          <h3>Cloud-Based E-Learning System</h3>
+          <p><strong>Tech:</strong> Python, OpenCV, AWS/GCP, MySQL, Web Technologies</p>
+          <ul>
+            <li>Built AI-based attendance system using facial recognition.</li>
+            <li>Designed scalable cloud architecture for 500+ users.</li>
+          </ul>
+          <p><strong>Impact:</strong> Improved attendance accuracy and reduced admin effort.</p>
         </div>
       </article>
-
-       <article class="project">
-       <!-- <img src="assets/vincy.png" alt="Vincy"> -->
-        <div class="project-content">
-          <h3>Other Projects</h3>
-          <p> <strong>  • Python CGI Menu System -  </strong> Menu-driven automation tool combining multiple technologies. <br>
-              <strong> • Bloonkhub -  </strong>Blood donor information platform for emergencies. <br>
-              <strong> • Hadoop High Availability -  </strong> Configured HA for fault-tolerant Hadoop clusters. <br>
-              <strong> • Cashbackbazar -  </strong> E-commerce cashback and deals aggregator.</p>
-        </div>
-      </article>
-
 
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:akashvyas5@yahoo.in">akashvyas5@yahoo.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/akash-sharma97/" target="_blank">akash-sharma97</a></p>
     </section>
+
   </main>
+
+  <!-- LINKEDIN BADGE -->
+  <div class="floating-badge">
+    <div class="LI-profile-badge"
+         data-version="v1"
+         data-size="medium"
+         data-locale="en_US"
+         data-type="horizontal"
+         data-theme="dark"
+         data-vanity="akash-sharma97">
+    </div>
+  </div>
+
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+</body>
+</html>
+
 
   <!-- Floating LinkedIn Badge -->
  <div class="floating-badge">
